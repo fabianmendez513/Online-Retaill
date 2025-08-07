@@ -1,10 +1,3 @@
-import { banner2 } from "../../component/bannerLogin/bannerLogin.js"
-export function bannerLogin (){
-    let login = document.createElement("div");
-    login.className = "login";
-    login.appendChild.appendChild(banner2());
+import { bannerLogin } from "../../component/bannerLogin/bannerLogin.js";
 
-    return login;
-}
-
-document.body.appendChild(login());
+document.body.appendChild(bannerLogin());
