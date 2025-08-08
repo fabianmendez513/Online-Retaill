@@ -1,0 +1,67 @@
+.contenedor-banner-login {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../assets/fonts/banner2.0.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-login {
+  background-color: rgb(255, 255, 255);
+  padding: 3rem 2rem;
+  border-radius: 30px;
+  text-align: center;
+  width: 80%;
+  max-width: 320px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.img-banner {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.banner-login h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #000000;
+}
+
+.banner-login p {
+  margin: 3rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.banner-login .btn-login {
+  display: block;
+  margin: 1.5rem auto 1rem auto;
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  color: #000000; /* morado fuerte */
+  border: 2px solid #000000;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.banner-login .btn-register {
+  background-color: rgb(114, 0, 245);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+

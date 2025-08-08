@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #e7e3f5;
+}
