@@ -14,18 +14,26 @@ export function bannerLogin() {
   div.appendChild(p1);
 
   const p2 = document.createElement("p");
-  p2.textContent =
-    "Each men and women has their own style, Geeta help you to create your unique style.";
+  p2.textContent = "Each men and women has their own style, Geeta help you to create your unique style.";
   div.appendChild(p2);
 
-  const btnLogin = document.createElement("a");
+  const btnLogin = document.createElement("button");
   btnLogin.className = "btn-login";
   btnLogin.textContent = "LOG IN";
+  
+  // Event Listener para ocultar banner y mostrar formulario
+  btnLogin.addEventListener('click', () => {
+    const banner = document.querySelector('.contenedor-banner-login');
+    const loginForm = document.querySelector('.login-form-container'); // Asegúrate de tener esta clase en tu formulario
+    
+    if (banner) banner.style.display = 'none';
+    if (loginForm) loginForm.style.display = 'block';
+  });
+  
   div.appendChild(btnLogin);
 
   const p3 = document.createElement("p");
-  p3.textContent =
-  "OR";
+  p3.textContent = "OR";
   div.appendChild(p3);
 
   const btnRegister = document.createElement("button");
