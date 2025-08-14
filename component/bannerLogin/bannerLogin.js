@@ -1,46 +1,39 @@
-export function bannerLogin() {
-  const contenedor = document.createElement("div");
-  contenedor.className = "contenedor-banner-login";
+import { cargaLogin } from " ../login/loginComponent.js";
+export function banner2(){
+  let div = document.createElement("div");
+  div.className = "div-banner";
 
-  const div = document.createElement("div");
-  div.className = "banner-login";
-
-  const h2 = document.createElement("h2");
+  let h2 = document.createElement ("div");
   h2.textContent = "Geeta.";
   div.appendChild(h2);
 
-  const p1 = document.createElement("p");
-  p1.innerHTML = "<b>Create your fashion in your own way</b>";
-  div.appendChild(p1);
+  let boldP1 = document.createElement("b");
+  let p1 = document.createElement ("p");
+  p1.textContent = "Create your fashion in your own wat";
+  boldP1.appendChild(p1);
 
-  const p2 = document.createElement("p");
-  p2.textContent = "Each men and women has their own style, Geeta help you to create your unique style.";
+  let p2 = document.createElement ("p");
+  p2.textContent = "Each men and women has their own style";
   div.appendChild(p2);
 
-  const btnLogin = document.createElement("button");
-  btnLogin.className = "btn-login";
-  btnLogin.textContent = "LOG IN";
-  
-  // Event Listener para ocultar banner y mostrar formulario
-  btnLogin.addEventListener('click', () => {
-    const banner = document.querySelector('.contenedor-banner-login');
-    const loginForm = document.querySelector('.login-form-container'); // Asegúrate de tener esta clase en tu formulario
-    
-    if (banner) banner.style.display = 'none';
-    if (loginForm) loginForm.style.display = 'block';
-  });
-  
-  div.appendChild(btnLogin);
+  let loginBtn = document.createElement("div");
+  loginBtn.textContent = "LOG IN";
+  loginBtn.className = "btn-login";
+  div.appendChild(loginBtn);
+  btnLogin.addEventListener'click', () => {
+  let banner = document.querySelector('.div-banner-login');
+  let loginForm = document.querySelector('.login-form-div-banner');
 
-  const p3 = document.createElement("p");
+  let p3 = document.createElement("p");
   p3.textContent = "OR";
   div.appendChild(p3);
 
-  const btnRegister = document.createElement("button");
-  btnRegister.className = "btn-register";
-  btnRegister.textContent = "REGISTER";
-  div.appendChild(btnRegister);
+  let registerBtn = document.createElement("button");
+  registerBtn.textContent = "REGISTER";
+  registerBtn.className = "btn-register";
+  div.appendChild(registerBtn);
 
-  contenedor.appendChild(div);
-  return contenedor;
+  banner2.appendChild(div);
+  return div-banner;
+  }
 }

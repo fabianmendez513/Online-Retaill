@@ -1,5 +1,7 @@
 .div-banner {
-    width: 100%;
+    margin: auto;
+    margin-top: auto;
+    width: 25%;
     height: 100vh;
     background-image: url("../../assets/fonts/banner1.0.png");
     background-size: cover;
@@ -10,19 +12,16 @@
     grid-template-rows: 1fr auto 15%;
     justify-content: center;
 
-    /* Elimina el fondo rojo */
     background-color: #f3ecf9;
-
-    /* Redondeado opcional */
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
     overflow: hidden;
 }
 
 .div-banner span {
     grid-row: 2/3;
     color: white;
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 900;
 }
 
